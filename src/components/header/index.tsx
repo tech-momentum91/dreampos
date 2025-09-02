@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { all_routes } from "../../routes/all_routes";
 import {
-  arabicFlag,
+  // arabicFlag,
   avatar01,
   avatar1,
   avatar10,
@@ -13,7 +13,7 @@ import {
   avatar_17,
   avator1,
   commandSvg,
-  englishFlag,
+  // englishFlag,
   logoPng,
   logoSmallPng,
   logoWhitePng,
@@ -26,22 +26,22 @@ import {
 const Header = () => {
   const route = all_routes;
   const [toggle, SetToggle] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-  const [flagImage, _setFlagImage] = useState(usFlag);
+  // const [isFullscreen, setIsFullscreen] = useState(false);
+  // const [flagImage, _setFlagImage] = useState(usFlag);
   // const { t, i18n } = useTranslation();
-  const changeLanguage = (_lng: any) => {
-    // Debugging statement
-    // i18n.changeLanguage(lng);
-    // setFlagImage(
-    //   lng === "en"
-    //     ? 'assets/img/flags/us-flag.svg'
-    //     : lng === "fr"
-    //       ? 'assets/img/flags/fr.png'
-    //       : lng === "es"
-    //         ? 'assets/img/flags/es.png'
-    //         : 'assets/img/flags/de.png'
-    // );
-  };
+  // const changeLanguage = (_lng: any) => {
+  //   // Debugging statement
+  //   // i18n.changeLanguage(lng);
+  //   // setFlagImage(
+  //   //   lng === "en"
+  //   //     ? 'assets/img/flags/us-flag.svg'
+  //   //     : lng === "fr"
+  //   //       ? 'assets/img/flags/fr.png'
+  //   //       : lng === "es"
+  //   //         ? 'assets/img/flags/es.png'
+  //   //         : 'assets/img/flags/de.png'
+  //   // );
+  // };
   const isElementVisible = (element: any) => {
     return element.offsetWidth > 0 || element.offsetHeight > 0;
   };
@@ -73,37 +73,37 @@ const Header = () => {
       document.removeEventListener("mouseover", handleMouseover);
     };
   }, []);
-  useEffect(() => {
-    const handleFullscreenChange = () => {
-      setIsFullscreen(
-        document.fullscreenElement ||
-          (document as any).mozFullScreenElement ||
-          (document as any).webkitFullscreenElement ||
-          (document as any).msFullscreenElement
-      );
-    };
+  // useEffect(() => {
+  //   const handleFullscreenChange = () => {
+  //     setIsFullscreen(
+  //       document.fullscreenElement ||
+  //         (document as any).mozFullScreenElement ||
+  //         (document as any).webkitFullscreenElement ||
+  //         (document as any).msFullscreenElement
+  //     );
+  //   };
 
-    document.addEventListener("fullscreenchange", handleFullscreenChange);
-    document.addEventListener("mozfullscreenchange", handleFullscreenChange);
-    document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
-    document.addEventListener("msfullscreenchange", handleFullscreenChange);
+  //   document.addEventListener("fullscreenchange", handleFullscreenChange);
+  //   document.addEventListener("mozfullscreenchange", handleFullscreenChange);
+  //   document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
+  //   document.addEventListener("msfullscreenchange", handleFullscreenChange);
 
-    return () => {
-      document.removeEventListener("fullscreenchange", handleFullscreenChange);
-      document.removeEventListener(
-        "mozfullscreenchange",
-        handleFullscreenChange
-      );
-      document.removeEventListener(
-        "webkitfullscreenchange",
-        handleFullscreenChange
-      );
-      document.removeEventListener(
-        "msfullscreenchange",
-        handleFullscreenChange
-      );
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("fullscreenchange", handleFullscreenChange);
+  //     document.removeEventListener(
+  //       "mozfullscreenchange",
+  //       handleFullscreenChange
+  //     );
+  //     document.removeEventListener(
+  //       "webkitfullscreenchange",
+  //       handleFullscreenChange
+  //     );
+  //     document.removeEventListener(
+  //       "msfullscreenchange",
+  //       handleFullscreenChange
+  //     );
+  //   };
+  // }, []);
   const handlesidebar = () => {
     document.body.classList.toggle("mini-sidebar");
     SetToggle((current) => !current);
@@ -146,34 +146,34 @@ const Header = () => {
     webkitRequestFullscreen?: (allowKeyboardInput?: any) => Promise<void>;
   }
 
-  const toggleFullscreen = (elem?: FullscreenElement) => {
-    const doc = document as FullscreenDocument;
-    elem = elem || (document.documentElement as FullscreenElement);
-    if (
-      !doc.fullscreenElement &&
-      !doc.mozFullScreenElement &&
-      !doc.webkitFullscreenElement &&
-      !doc.msFullscreenElement
-    ) {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.msRequestFullscreen) {
-        elem.msRequestFullscreen();
-      } else if (elem.mozRequestFullScreen) {
-        elem.mozRequestFullScreen();
-      } else if (elem.webkitRequestFullscreen) {
-        elem.webkitRequestFullscreen(1);
-      }
-    } else {
-      if (doc.exitFullscreen) {
-        doc.exitFullscreen();
-      } else if (doc.mozCancelFullScreen) {
-        doc.mozCancelFullScreen();
-      } else if (doc.webkitExitFullscreen) {
-        doc.webkitExitFullscreen();
-      }
-    }
-  };
+
+  //   const doc = document as FullscreenDocument;
+  //   elem = elem || (document.documentElement as FullscreenElement);
+  //   if (
+  //     !doc.fullscreenElement &&
+  //     !doc.mozFullScreenElement &&
+  //     !doc.webkitFullscreenElement &&
+  //     !doc.msFullscreenElement
+  //   ) {
+  //     if (elem.requestFullscreen) {
+  //       elem.requestFullscreen();
+  //     } else if (elem.msRequestFullscreen) {
+  //       elem.msRequestFullscreen();
+  //     } else if (elem.mozRequestFullScreen) {
+  //       elem.mozRequestFullScreen();
+  //     } else if (elem.webkitRequestFullscreen) {
+  //       elem.webkitRequestFullscreen(1);
+  //     }
+  //   } else {
+  //     if (doc.exitFullscreen) {
+  //       doc.exitFullscreen();
+  //     } else if (doc.mozCancelFullScreen) {
+  //       doc.mozCancelFullScreen();
+  //     } else if (doc.webkitExitFullscreen) {
+  //       doc.webkitExitFullscreen();
+  //     }
+  //   }
+  // };
   interface RootState {
     themeSetting: {
       expandMenus: { expandMenus: boolean };
