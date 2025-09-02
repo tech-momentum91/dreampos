@@ -297,7 +297,7 @@ const Salestax = () => {
           <p>
             Designed &amp; Developed by{" "}
             <Link to="#" className="text-orange">
-              Dreams
+              Momentum91
             </Link>
           </p>
         </div>

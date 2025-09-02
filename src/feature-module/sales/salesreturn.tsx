@@ -930,7 +930,7 @@ const SalesReturn = () => {
           <p>
             Designed &amp; Developed By{" "}
             <Link to="#" className="text-primary">
-              Dreams
+              Momentum91
             </Link>
           </p>
         </div>

@@ -5206,8 +5206,8 @@ const KanbanView = () => {
           <p className="mb-0">2014 - 2025 © SmartHR.</p>
           <p>
             Designed &amp; Developed By{" "}
-            <Link to="#" className="text-primary">
-              Dreams
+            <Link to="https://www.momentum91.com" className="text-primary">
+              Momentum91
             </Link>
           </p>
         </div>

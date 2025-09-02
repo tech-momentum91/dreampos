@@ -784,7 +784,7 @@ const AllBlogs = () => {
           </p>
           <p>
             Designed &amp; Developed by{" "}
-            <Link to="#" className="text-primary">
+            <Link to="https://www.momentum91.com" className="text-primary">
             Momentum91
             </Link>
           </p>
