@@ -71,7 +71,7 @@ const NewDashboard = () => {
         show: false,
       },
     },
-    colors: ["#FE9F43", "#FFE3CB"],
+    colors: ["#038749", "#FFE3CB"],
     responsive: [
       {
         breakpoint: 480,
@@ -292,7 +292,7 @@ const NewDashboard = () => {
       {
         label: ["Lifestyles", "Sports", "Electronics"],
         data: [16, 24, 50],
-        backgroundColor: ["#092C4C", "#E04F16", "#FE9F43"],
+        backgroundColor: ["#092C4C", "#E04F16", "#038749"],
         borderWidth: 5,
         borderRadius: 10,
         hoverBorderWidth: 0,
@@ -335,7 +335,7 @@ const NewDashboard = () => {
             {
               from: 100,
               to: 200,
-              color: "#FE9F43",
+              color: "#038749",
             },
           ],
         },

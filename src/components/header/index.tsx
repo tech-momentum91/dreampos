@@ -21,7 +21,7 @@ import {
   store_02,
   store_03,
   store_04,
-  usFlag,
+  // usFlag,
 } from "../../utils/imagepath";
 const Header = () => {
   const route = all_routes;
@@ -131,20 +131,20 @@ const Header = () => {
     return "";
   }
 
-  interface FullscreenDocument extends Document {
-    mozFullScreenElement?: Element | null;
-    webkitFullscreenElement?: Element | null;
-    msFullscreenElement?: Element | null;
-    msRequestFullscreen?: () => Promise<void>;
-    mozCancelFullScreen?: () => Promise<void>;
-    webkitExitFullscreen?: () => Promise<void>;
-  }
+  // interface FullscreenDocument extends Document {
+  //   mozFullScreenElement?: Element | null;
+  //   webkitFullscreenElement?: Element | null;
+  //   msFullscreenElement?: Element | null;
+  //   msRequestFullscreen?: () => Promise<void>;
+  //   mozCancelFullScreen?: () => Promise<void>;
+  //   webkitExitFullscreen?: () => Promise<void>;
+  // }
 
-  interface FullscreenElement extends HTMLElement {
-    msRequestFullscreen?: () => Promise<void>;
-    mozRequestFullScreen?: () => Promise<void>;
-    webkitRequestFullscreen?: (allowKeyboardInput?: any) => Promise<void>;
-  }
+  // interface FullscreenElement extends HTMLElement {
+  //   msRequestFullscreen?: () => Promise<void>;
+  //   mozRequestFullScreen?: () => Promise<void>;
+  //   webkitRequestFullscreen?: (allowKeyboardInput?: any) => Promise<void>;
+  // }
 
 
   //   const doc = document as FullscreenDocument;

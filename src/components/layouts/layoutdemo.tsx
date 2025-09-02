@@ -64,7 +64,7 @@ const LayoutDemo = () => {
         show: false,
       },
     },
-    colors: ["#FE9F43", "#FFE3CB"],
+    colors: ["#038749", "#FFE3CB"],
     responsive: [
       {
         breakpoint: 480,
@@ -160,7 +160,7 @@ const LayoutDemo = () => {
         show: false,
       },
     },
-    colors: ["#FE9F43", "#FFE3CB"],
+    colors: ["#038749", "#FFE3CB"],
     responsive: [
       {
         breakpoint: 480,
@@ -250,7 +250,7 @@ const LayoutDemo = () => {
         show: false,
       },
     },
-    colors: ["#FE9F43", "#FFE3CB"],
+    colors: ["#038749", "#FFE3CB"],
     responsive: [
       {
         breakpoint: 480,
@@ -343,7 +343,7 @@ const LayoutDemo = () => {
         show: false,
       },
     },
-    colors: ["#FE9F43", "#FFE3CB"],
+    colors: ["#038749", "#FFE3CB"],
     responsive: [
       {
         breakpoint: 480,
@@ -436,7 +436,7 @@ const LayoutDemo = () => {
         show: false,
       },
     },
-    colors: ["#FE9F43", "#FFE3CB"],
+    colors: ["#038749", "#FFE3CB"],
     responsive: [
       {
         breakpoint: 480,
@@ -662,7 +662,7 @@ const LayoutDemo = () => {
       {
         label: "Top Categories",
         data: [16, 24, 50],
-        backgroundColor: ["#092C4C", "#E04F16", "#FE9F43"],
+        backgroundColor: ["#092C4C", "#E04F16", "#038749"],
         borderWidth: 5,
         borderRadius: 10,
         hoverBorderWidth: 0, // Border radius for curved edges
@@ -705,7 +705,7 @@ const LayoutDemo = () => {
             {
               from: 100,
               to: 200,
-              color: "#FE9F43",
+              color: "#038749",
             },
           ],
         },
@@ -3050,8 +3050,8 @@ const LayoutDemo = () => {
           {/* 2014-2025 © DreamsPOS. All Right Reserved */}
         </p>
         <p>
-          Designed &amp; Developed By Dreams{" "}
-          <Link to="#" className="link-primary">
+          Designed &amp; Developed By{" "}
+          <Link to="https://www.momentum91.com" className="link-primary">
             Momentum91
           </Link>
         </p>
