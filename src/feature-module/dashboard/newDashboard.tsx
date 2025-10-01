@@ -2461,8 +2461,8 @@ const NewDashboard = () => {
           2014-2025 © DreamsPOS. All Right Reserved
         </p> */}
         <p>
-          Designed &amp; Developed By Dreams{" "}
-          <Link to="#" className="link-primary">
+          Designed &amp; Developed By{" "}
+          <Link to="https://www.momentum91.com" className="link-primary">
           Momentum91
           </Link>
         </p>
